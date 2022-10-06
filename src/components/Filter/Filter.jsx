@@ -5,7 +5,7 @@ export const Filter = ({ filter, changeFilter }) => {
   return (
     <FindLabel>
       <PromptFind>Find contacts by name</PromptFind>
-      <FindInput type="text" value={filter} onChange={changeFilter} />
+      <FindInput type="text" name="filter" value={filter} onChange={changeFilter} />
     </FindLabel>
   );
 };

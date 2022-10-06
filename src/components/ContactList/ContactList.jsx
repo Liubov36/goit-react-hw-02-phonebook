@@ -6,6 +6,8 @@ export const ContactList = ({ contacts, onDeleteContact }) => {
   return (
     <ul>
       {contacts.map(({ id, name, number }) => {
+          contacts.some (contact =>
+            contact.name.toLowerCase() === name.toLowerCase())
         return (
           <AddedСontacts key={id}>
             <Contact
